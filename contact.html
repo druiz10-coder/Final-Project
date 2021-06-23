@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
 <link rel="stylesheet" type="text/css" href=".css/contact.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-    <style>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"/>
+   <style>
         body {
     background-image: url('./img/RX78&Zaku.jpeg');
     background-repeat: no-repeat;
@@ -16,49 +15,67 @@
     background-size: cover;
     }</style>
 </head>
+
 <body>
 
-    <div class="animation-area">
-        <ul class="box-area">
-            <li><img src="./img/Zeon.png" alt="My Image"></li>
-            <li><img src="./img/Zeon.png" alt="My Image"></li>
-            <li><img src="./img/Zeon.png" alt="My Image"></li>
-            <li><img src="./img/Zeon.png" alt="My Image"></li>
-            <li><img src="./img/Zeon.png" alt="My Image"></li>
-            <li><img src="./img/Zeon.png" alt="My Image"></li>
-        </ul>
-    </div>
-
 <header>
-    <div class="contact-form">
-		<img alt="" class="avatar" src="https://i.postimg.cc/zDyt7KCv/a1.jpg">
-		<h2>Contact Form</h2>
-        <form action="#" name="contact_form">
-            <label for="Name">First Name</label>
-            <input name="Name" type="text" required placeholder="Name"/>
-            <br>
-            <label for="email">Email</label>
-            <input name="email" type="email" required placeholder="you@domain.com"/>
-            <br>
-            <label for="message">Message</label><br>
-            <textarea name="message" cols="73" rows="10" placeholder="Enter your message here ..." required> </textarea>
-            <div class="center">
-                <input type="submit" value="Submit">
-            </div>
-        </form>	
-	</div>
-
-    <div class="container">
-        <h1 class="logo"></h1>
-
     <nav>
         <div class="banner-text">
             <ul>
-                <li><a href="index.html" class= nav-link">Home</a></li>
-                <li><a href="about.html" class= nav-link">About</a></li>
-                <li><a href="contact.html" class= nav-link">Contact</a></li>
+            <li><a href="index.html" class= nav-link">Home</a></li>
+            <li><a href="about.html" class= nav-link">About</a></li>
+            <li><a href="contact.html" class= nav-link">Contact</a></li>
             </ul>
-    </nav>
+        </div>    
+        </nav>
+</header>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <main>
+      <div id="container">
+      <header>
+        <h1 id="title">Contact Me</h1>
+        <!--- might change to survey later
+        <p id="description">To see how many other fans are the same with you</p>
+        !--->
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" class="control" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" class="control" required>
+        </div>
+        <div class="form-group">
+            <label id="phone number" for="phone number">Phone Number</label>
+            <input type="phone number" id="phone pumber" placeholder="Enter your phone number" class="control" required>
+          </div>
+        
+        <!--- might keep later 
+        <div class="form-group">
+        <p>what's your favorite series?</p>
+        <select id="dropdown" class="control">
+          <option value="" disable selected hidden >Please select series</option>
+          <option value="uc">UC Series</option>
+          <option value="g">G Gundam</option>
+          <option value="w">Gundam W</option>
+          <option value="x">Gundam X</option>
+          <option value="seed">Seed Series</option>
+          <option value="00">00 Series</option>
+          <option value="gunpla">Gunpla Builder Series</option>
+        </select>
+        </div>!--->
+        
+        <div class="form-group">
+        <p>Any other words to say？</p>
+        <textarea placeholder="You can write anything" ></textarea>
+        </div>
+        <input type="submit" id="submit" Value="SUBMIT">
+      </form>
+      </div>
+    </main>
 </header>
 
 </body>

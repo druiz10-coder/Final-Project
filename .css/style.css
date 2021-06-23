@@ -20,7 +20,7 @@ body {
 	font-size: 17px;
 }
   
-#navbar a:hover {
+/*#navbar a:hover {
 	background-color: #ddd;
 	color: black;
 }
@@ -34,7 +34,7 @@ body {
 	padding: 16px;
 }
   
-.sticky {
+/*.sticky {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -42,9 +42,10 @@ body {
   
 .sticky + .content {
 	padding-top: 60px;
-}
+}*/
 
 .banner-text {
+	height: 50px;
 	width: 100%;
 	position: absolute;
 	z-index: 1;
@@ -57,7 +58,7 @@ body {
 
 .banner-text ul li {
 	display: inline-block;
-	padding: 40px 15px;
+	padding: 15px;
 	text-transform: uppercase;
 	color: black;
 	font-size: 20px;
@@ -68,24 +69,47 @@ body {
 	cursor: pointer;
 }
 
-.banner-text h1 {
+.heroImage {
+    /* .webp image loads faster but have jpg as backup */
+	background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(https://i.pinimg.com/originals/2a/60/1f/2a601fc3af2795db4699f3ce60c5ef62.jpg);
+	height: 100vmin;
+    width: 100%;
+	margin-top: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom: 0px solid white;
+}
+
+.heroText {
+    display: inline-block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    position: absolute;
+}
+
+h1 {
 	text-align: center;
-	color:gold;
-	font-size: 100px;
-	margin-top: 30%;
-    text-shadow: 2px 2px black;
+	color: #bba1b8;
+	font-size: 65px;
+    text-shadow: 2px 2px #b81993;
 }
 
 h2 {
 	text-align: center;
-	color:gold;
+	color: #36a7a1;
 	font-size: 50px;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px gold;
 }
 
 img {
     width: 200px;
     height: 200px;
+	opacity: 1;
 }
 
 /*.animation-area {
@@ -153,7 +177,7 @@ img {
 }
 @keyframes animate {
 	0% {
-		transform: translateY(0) rotate(0deg);
+		transform: translateY(0px) rotate(0deg);
 		opacity: 1;
 	}
 	100% {
