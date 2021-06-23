@@ -1,0 +1,81 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body { 
+    font: 14px/2 Georgia, serif; 
+    background: #eee;
+    text-align: center;
+    font-family: arial;
+    font-size: 1.2em;
+    padding: 1% 0;
+  }
+
+#intro {
+  background: url()no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover; 
+}
+  
+/* the nav bar */
+#navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+  
+/*#navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+  
+#navbar a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+  
+.content {
+	padding: 16px;
+}
+  
+/*.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+  
+.sticky + .content {
+	padding-top: 60px;
+}*/
+
+.banner-text {
+	background-color: 0;
+	height: 50px;
+	width: 100%;
+	position: absolute; 
+	z-index: 1;
+}
+
+.banner-text ul {
+	height: 50px;
+	float: right;
+}
+
+.banner-text ul li {
+	display: inline-block;
+	padding: 15px;
+	text-transform: uppercase;
+	color: black;
+	font-size: 20px;
+    text-shadow: 2px 2px white;
+}
+
+.banner-text ul li:hover {
+	cursor: pointer;
+}
