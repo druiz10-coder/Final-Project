@@ -3,7 +3,8 @@ html{
 }
 
 body { 
-    font: 14px/2 Georgia, serif; 
+    font: 14px/2 Georgia, serif;
+	background-image: url(../img/Unicorn.jpg); 
     background: #eee;
     text-align: center;
     font-family: arial;
@@ -11,14 +12,6 @@ body {
     padding: 1% 0;
   }
 
-#intro {
-  background: url()no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover; 
-}
-  
 /* the nav bar */
 #navbar a {
 	float: left;
